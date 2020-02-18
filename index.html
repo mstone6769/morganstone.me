@@ -1,41 +1,161 @@
 <!doctype html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Morgan Stone - Software Engineer</title>
-  <meta name="description" content="">
+  <title>Morgan Stone</title>
+  <meta name="description" content="Personal website of Morgan Stone from Birmingham, Alabama">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
   <meta name="theme-color" content="#89a846">
-</head>
+  <style type="text/css">
+    html {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
 
+    body {
+      margin: 0;
+      color: #111;
+      background-color: white;
+      font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+
+    header,
+    footer,
+    main {
+      display: block;
+    }
+
+    a {
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+      color: #89a846;
+      text-decoration: none;
+    }
+
+    a:active,
+    a:hover {
+      outline-width: 0;
+    }
+
+    a:hover, a:focus {
+      border-bottom: 1px dotted #89a846;
+      color: #89a846;
+    }
+
+    h1, h2, h3, p {
+      font-weight: inherit;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .lead {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      padding-top: 2rem;
+      border-top: double 3px gainsboro;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      clear: both;
+    }
+
+    h3 {
+      font-weight: inherit;
+      font-size: inherit;
+    }
+
+    p {
+      margin: 0 0 1rem 0;
+    }
+
+    .p1 {
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2, .condensed {
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+    }
+
+    .small-container {
+      max-width: 540px;
+      width: 100%;
+    }
+
+    @media (min-width: 850px) {
+      .small-container {
+        float: right;
+        margin-top: -3.75rem;
+      }
+    }
+  </style>
+</head>
 <body>
-  <h1>Morgan Stone - Software Engineer</h1>
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-1337770-1', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <main>
+    <h1 class="container p1 condensed">Morgan Stone</h1>
+    <div class="container p1">
+      <p class="lead">Howdy! My name is Morgan Stone and I'm a <a href="https://www.linkedin.com/in/morganstone/">software engineer</a> hailing from <a href="https://en.wikipedia.org/wiki/Birmingham,_Alabama" title="Birmingham, Alabama">The Magic City</a>. I work for <a href="https://partners.healthgrades.com/">Healthgrades</a> where I lead a team that is building the <a href="https://partners.healthgrades.com/healthcare-cdp/">next big thing in healthcare</a>. In my off time, you can find me at my <a href="https://www.kingwoodchurch.com">local church</a> or <a href="https://www.instagram.com/smokin.stone/">smoking a brisket</a>.</p>
+      <h2>Talks</h2>
+      <div class="small-container">
+        <h3><a href="https://github.com/mstone6769/lets-build-a-zoo">Rapid Prototyping with Angular CLI</a></h3>
+        <p>Women Who Code Birmingham, January 2018</p>
+        <h3><a href="https://www.slideshare.net/morganstone/optimizing-angular-performance-in-enterprise-single-page-apps">Optimizing Angular (Client Side Performance)</a></h3>
+        <p>Birmingham Javascript Meetup, June 2016</p>
+        <h3><a href="https://github.com/mstone6769/theRocksRecipes">Foundation for Apps</a></h3>
+        <p>Birmingham Javascript Meetup, April 2015</p>
+        <h3>Sass: Get Spunky Writing CSS</h3>
+        <p>AIGA Birmingham, March 2014</p>
+        <h3>An Introduction to Foundation: A Responsive Design Framework</h3>
+        <p>AIGA Birmingham, November 2013</p>
+      </div>
+      <h2>Interviews</h2>
+      <div class="small-container">
+        <h3><a href="http://www.uab.edu/mix/stories/finding-success-in-digital-careers">Finding success in digital careers</a></h3>
+        <p>UAB Mix, March 2017</p>
+      </div>
+      <h2>Contact</h2>
+      <div class="small-container">
+        <p>We can connect via <a href="mailto:mstone@designbymorgan.com">Email</a> or <a href="https://www.linkedin.com/in/morganstone">LinkedIn</a>.</p>
+      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" href="https://use.typekit.net/ijc7duc.css">
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Person",
       "name": "Morgan Stone",
-      "url": "https://www.morganstone.me",
+      "url": "https://www.designbymorgan.com",
       "sameAs": [
         "https://www.linkedin.com/in/morganstone",
         "https://github.com/mstone6769",
         "https://codepen.io/mstone6769/",
         "https://twitter.com/morganstone",
-        "https://www.instagram.com/mstone6769/",
+        "https://www.instagram.com/smokin.stone/",
         "https://www.behance.net/mstone",
         "https://www.flickr.com/people/morganstone/",
         "https://dribbble.com/mstone",
         "https://www.facebook.com/mstone"
       ]
     }
-    </script>
+  </script>
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-1337770-1', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 </html>

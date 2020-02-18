@@ -8,6 +8,8 @@ module.exports = function(eleventyConfig) {
       'html',
       'txt',
       'png',
+      'gif',
+      'svg',
       'ico',
       'xml',
       'webmanifest',

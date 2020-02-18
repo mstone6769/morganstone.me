@@ -1,0 +1,12 @@
+{
+  "short_name": "Morgan",
+  "name": "Morgan Stone",
+  "icons": [{
+    "src": "android-chrome-192x192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#89a846",
+  "theme_color": "#89a846"
+}
