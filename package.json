@@ -9,7 +9,7 @@
     "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
-  "author": "mstone@designbymorgan.com",
+  "author": "Morgan Stone <mstone@designbymorgan.com> (https://morganstone.me/)",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",

@@ -15,15 +15,12 @@ module.exports = function(eleventyConfig) {
       collapseWhitespace: true
     });
   });
-  eleventyConfig.addPassthroughCopy({ '_static': '.' });
+
+  eleventyConfig.addPassthroughCopy({ 'src/_static': '.' });
   return {
-    passthroughFileCopy: true,
-    templateFormats: [
-      'html'
-    ],
     dir: {
-      input: '.',
-      output: '_site'
+      input: 'src',
+      output: 'dist'
     }
   };
 };

@@ -89,3 +89,4 @@ typings/
 
 # compiled files
 _site
+dist
