@@ -1,19 +1,9 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy('img');
-  eleventyConfig.addPassthroughCopy('css');
-  eleventyConfig.addPassthroughCopy('js');
+  eleventyConfig.addPassthroughCopy({ 'static': '.' });
   return {
     passthroughFileCopy: true,
     templateFormats: [
-      'html',
-      'txt',
-      'png',
-      'gif',
-      'svg',
-      'ico',
-      'xml',
-      'webmanifest',
-      '_redirects'
+      'html'
     ],
     dir: {
       input: '.',
