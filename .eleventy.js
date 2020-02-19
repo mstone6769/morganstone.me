@@ -4,6 +4,7 @@ const Terser = require('terser');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles);
+  eleventyConfig.addFilter('nowhitespace', (code) => code.replace(/\s+/g, ''))
   eleventyConfig.addFilter('jsmin', (code) => {
     const minified = Terser.minify(code);
     if (!minified.error) {

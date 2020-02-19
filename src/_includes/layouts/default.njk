@@ -26,34 +26,20 @@
       {{ content | safe }}
     </div>
   </main>
+  {% set personSchemaJSON %}
+    {% include "person-schema.json" %}
+  {% endset %}
   <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Morgan Stone",
-      "url": "https://morganstone.me",
-      "sameAs": [
-        "https://www.linkedin.com/in/morganstone",
-        "https://github.com/mstone6769",
-        "https://codepen.io/mstone6769/",
-        "https://twitter.com/morganstone",
-        "https://www.instagram.com/smokin.stone/",
-        "https://www.behance.net/mstone",
-        "https://www.flickr.com/people/morganstone/",
-        "https://dribbble.com/mstone",
-        "https://www.facebook.com/mstone"
-      ]
-    }
+    {{ personSchemaJSON | nowhitespace | safe }}
   </script>
-  {% set js %}
+  {% set fontLoadingJS %}
     {% include "font-loading.js" %}
   {% endset %}
+  {% set gaJS %}
+    {% include "ga.js" %}
+  {% endset %}
   <script>
-    {{ js | jsmin | safe }}
-  </script>
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-1337770-1', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    {{ fontLoadingJS | jsmin | safe }}{{ gaJS | jsmin | safe }}
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
