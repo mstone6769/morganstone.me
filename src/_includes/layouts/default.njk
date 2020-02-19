@@ -12,7 +12,8 @@
   <style type="text/css">
     {{ css | cssmin | safe }}
   </style>
-  <link rel="stylesheet" href="https://use.typekit.net/ijc7duc.css">
+  <link rel="preload" href="https://use.typekit.net/ijc7duc.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://use.typekit.net/ijc7duc.css"></noscript>
 </head>
 <body>
   <main>
@@ -39,6 +40,12 @@
         "https://www.facebook.com/mstone"
       ]
     }
+  </script>
+  {% set js %}
+    {% include "font-loading.js" %}
+  {% endset %}
+  <script>
+    {{ js | jsmin | safe }}
   </script>
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
