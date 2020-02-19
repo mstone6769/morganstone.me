@@ -1,9 +1,16 @@
 const htmlmin = require('html-minifier');
 const CleanCSS = require('clean-css');
+const Terser = require('terser');
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addFilter('cssmin', (code) => {
-    return new CleanCSS({}).minify(code).styles;
+  eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles);
+  eleventyConfig.addFilter('jsmin', (code) => {
+    const minified = Terser.minify(code);
+    if (!minified.error) {
+      return minified.code;
+    }
+    console.log('Terser error: ', minified.error);
+    return code;
   });
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if( !outputPath.endsWith('.html') ) {
