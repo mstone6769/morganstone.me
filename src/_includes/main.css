@@ -6,8 +6,8 @@ html {
 
 body {
   margin: 0;
-  color: #111;
-  background-color: white;
+  color: #92979B;
+  background-color: #1D1F20;
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -15,7 +15,7 @@ body {
 }
 
 .fonts-loaded > body {
-  font-family: "ff-tisa-web-pro","Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-family: "ff-tisa-web-pro", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 
 header,
@@ -27,7 +27,6 @@ main {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: #89a846;
   text-decoration: none;
 }
 
@@ -36,10 +35,14 @@ a:hover {
   outline-width: 0;
 }
 
-a:hover, a:focus {
-  border-bottom: 1px dotted #89a846;
-  color: #89a846;
+a, a:hover, a:focus {
+  color: #C5C8C9;
 }
+
+a:hover, a:focus {
+  border-bottom: 1px dotted #C5C8C9;
+}
+
 
 h1, h2, h3, p {
   font-weight: inherit;
@@ -54,7 +57,7 @@ h1, h2, h3, p {
 
 h2 {
   padding-top: 2rem;
-  border-top: double 3px gainsboro;
+  border-top: double 3px rgba(255, 255, 255, 0.2);
   margin-top: 3rem;
   margin-bottom: 2rem;
   clear: both;
@@ -88,6 +91,11 @@ h2, .condensed {
 .small-container {
   max-width: 540px;
   width: 100%;
+}
+
+::selection, ::-moz-selection {
+  color: #1D1F20;
+  background-color: #92979B;
 }
 
 @media (min-width: 850px) {
