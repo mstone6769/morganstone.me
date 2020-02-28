@@ -1,12 +1,19 @@
 {
   "short_name": "Morgan",
   "name": "Morgan Stone",
-  "icons": [{
-    "src": "android-chrome-192x192.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
+  "icons":[
+    {
+       "src":"/android-chrome-192x192.png",
+       "sizes":"192x192",
+       "type":"image/png"
+    },
+    {
+       "src":"/android-chrome-512x512.png",
+       "sizes":"512x512",
+       "type":"image/png"
+    }
+ ],
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#89a846",
-  "theme_color": "#89a846"
+  "background_color": "#1D1F20",
+  "theme_color": "#C5C8C9"
 }
