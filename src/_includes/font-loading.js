@@ -9,7 +9,7 @@ n+"ms timeout exceeded"));else{var a=document.hidden;if(!0===a||void 0===a)f=e.a
 L(c,'"'+c.family+'",sans-serif'));A(p,function(a){g=a;v()});u(p,L(c,'"'+c.family+'",serif'));A(q,function(a){h=a;v()});u(q,L(c,'"'+c.family+'",monospace'))})})};"object"===typeof module?module.exports=B:(window.FontFaceObserver=B,window.FontFaceObserver.prototype.load=B.prototype.load);}());
 
 (function(w){
-  new w.FontFaceObserver('ff-tisa-web-pro', { weight: 400 }).load().then(function () {
+  new w.FontFaceObserver('Fraunces', { weight: 400 }).load().then(function () {
     window.document.documentElement.classList.add('fonts-loaded');
   }, function () {});
 }(this));
