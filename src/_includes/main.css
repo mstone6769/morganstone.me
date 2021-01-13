@@ -3,6 +3,7 @@
   font-family: 'Fraunces';
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: url('/fonts/fraunces-v3-latin-300.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('/fonts/fraunces-v3-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -22,14 +23,10 @@ body {
   margin: 0;
   color: #92979B;
   background-color: #1D1F20;
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-family: 'Fraunces', "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-size: 1.25rem;
   line-height: 1.5;
   font-weight: 300;
-}
-
-.fonts-loaded > body {
-  font-family: 'Fraunces', "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 
 header,

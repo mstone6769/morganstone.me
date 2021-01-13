@@ -35,7 +35,7 @@
     {% include "ga.js" %}
   {% endset %}
   <script>
-    {{ fontLoadingJS | jsmin | safe }}{{ gaJS | jsmin | safe }}
+    {{ gaJS | jsmin | safe }}
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
