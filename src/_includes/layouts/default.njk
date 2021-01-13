@@ -28,9 +28,6 @@
   <script type="application/ld+json">
     {{ personSchemaJSON | nowhitespace | safe }}
   </script>
-  {% set fontLoadingJS %}
-    {% include "font-loading.js" %}
-  {% endset %}
   {% set gaJS %}
     {% include "ga.js" %}
   {% endset %}
