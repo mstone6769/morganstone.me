@@ -37,14 +37,16 @@ async function imageShortcode(src, alt, className = "", widths = "300,600", size
 module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('cssmin', (code) => new CleanCSS({}).minify(code).styles);
   eleventyConfig.addFilter('nowhitespace', (code) => code.replace(/\s+/g, ''));
-  eleventyConfig.addFilter('jsmin', (code) => {
-    const minified = Terser.minify(code);
-    if (!minified.error) {
-      return minified.code;
-    }
-    console.log('Terser error: ', minified.error);
-    return code;
-  });
+  eleventyConfig.addNunjucksAsyncFilter('jsmin', (code) =>
+    Terser.minify(code)
+      .then((minified) => {
+        console.log(minified.code);
+        return minified.code;
+      })
+      .catch((error) => {
+      console.error('Terser error', error);
+      return code;
+    }));
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if( !outputPath.endsWith('.html') ) {
       return content;
