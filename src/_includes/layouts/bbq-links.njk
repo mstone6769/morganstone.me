@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Morgan Stone</title>
-  <meta name="description" content="Personal website of Birmingham, Alabama native, Morgan Stone">
+  <title>Morgan Stone - {{ title }}</title>
+  <meta name="description" content="{{ description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#89a846">
   {% set css %}
-    {% include "main.css" %}
+    {% include "bbq-links.css" %}
   {% endset %}
   <style type="text/css">
     {{ css | cssmin | safe }}
@@ -17,17 +17,8 @@
 </head>
 <body>
   <main>
-    <h1 class="container p1 condensed">Morgan Stone</h1>
-    <div class="container p1">
-      {{ content | safe }}
-    </div>
+    {{ content | safe }}
   </main>
-  {% set personSchemaJSON %}
-    {% include "person-schema.json" %}
-  {% endset %}
-  <script type="application/ld+json">
-    {{ personSchemaJSON | nowhitespace | safe }}
-  </script>
   {% set gaJS %}
     {% include "ga.js" %}
   {% endset %}

@@ -1,0 +1,130 @@
+/* montserrat-900 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/fonts/montserrat-v15-latin-900.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/fonts/montserrat-v15-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/montserrat-v15-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/montserrat-v15-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/montserrat-v15-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/montserrat-v15-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/roboto-slab-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/fonts/roboto-slab-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/roboto-slab-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/roboto-slab-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/roboto-slab-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/roboto-slab-v13-latin-regular.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+}
+
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: #92979B;
+  background-color: #1D1F20;
+  font-family: "Roboto Slab", Rockwell, Courier Bold, Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+header,
+footer,
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+h1 {
+  padding-top: 1rem;
+  display: block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+h1 > span {
+  display: block;
+  font-family: 'Montserrat', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-smooth: always;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0;
+}
+
+main {
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-image > * {
+  border-radius: 999px;
+  width: 96px;
+  height: 96px;
+}
+
+.button {
+  color: white;
+  font-family: 'Montserrat', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  display: block;
+  padding: 0.5rem 0.5rem;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, p {
+  font-weight: inherit;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding-top: 1rem;
+  border-top: double 3px rgba(255, 255, 255, 0.2);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  clear: both;
+}
+
+::selection, ::-moz-selection {
+  color: #1D1F20;
+  background-color: #92979B;
+}
