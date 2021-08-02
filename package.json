@@ -13,8 +13,8 @@
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "clean-css": "^4.2.3",
+    "clean-css": "^5.1.4",
     "html-minifier": "^4.0.0",
-    "terser": "^4.6.3"
+    "terser": "^5.7.1"
   }
 }
