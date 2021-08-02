@@ -23,6 +23,7 @@
     {% include "ga.js" %}
   {% endset %}
   <script>
+    /* ga script */
     {{ gaJS | jsmin | safe }}
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
