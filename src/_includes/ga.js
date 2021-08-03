@@ -17,3 +17,8 @@ var captureSocialOutboundLink = function(social, url) {
     'hitCallback': function(){document.location = url;}
   });
 }
+
+var captureMailTo = function(email) {
+  ga('send', 'event', 'mailto', 'click', email);
+  return true;
+}

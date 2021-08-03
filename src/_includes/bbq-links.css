@@ -67,6 +67,8 @@ h1 {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.5em;
+  padding-bottom: 1rem;
+  border-bottom: double 3px rgba(255, 255, 255, 0.2);
 }
 
 h1 > span {
@@ -77,8 +79,8 @@ h1 > span {
   color: white;
   text-transform: uppercase;
   font-size: 3rem;
-  margin-bottom: 1rem;
   letter-spacing: 0;
+  clear: both;
 }
 
 main {
@@ -117,9 +119,7 @@ h2 {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  padding-top: 1rem;
-  border-top: double 3px rgba(255, 255, 255, 0.2);
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   clear: both;
 }

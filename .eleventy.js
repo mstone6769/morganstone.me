@@ -8,7 +8,6 @@ async function imageShortcode(src, alt, className = "", widths = "300,600", size
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
   }
-  console.log(widths.split(','))
   let metadata = await Image(src, {
     widths: widths.split(','),
     formats: ['webp', 'jpeg'],
