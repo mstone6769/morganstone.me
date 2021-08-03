@@ -68,8 +68,6 @@ h1 {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  padding-bottom: 1rem;
-  border-bottom: double 3px rgba(255, 255, 255, 0.2);
 }
 
 h1 > span {
@@ -135,8 +133,6 @@ footer {
   padding-top: 2rem;
   font-size: 0.9rem;
 }
-
-
 
 ::selection, ::-moz-selection {
   color: #1D1F20;
