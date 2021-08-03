@@ -22,6 +22,7 @@
 <body>
   <main>
     {{ content | safe }}
+    <footer>Copyright &copy; {{ page.date.getFullYear() }} <a href="/">Morgan Stone</a></footer>
   </main>
   {% set gaJS %}
     {% include "ga.js" %}

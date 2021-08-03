@@ -22,3 +22,10 @@ var captureMailTo = function(email) {
   ga('send', 'event', 'mailto', 'click', email);
   return true;
 }
+
+var captureAffiliateLink = function(url) {
+  ga('send', 'event', 'affiliate', 'click', url, {
+    'transport': 'beacon',
+    'hitCallback': function(){document.location = url;}
+  });
+}
