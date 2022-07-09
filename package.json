@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "morganstone.me",
   "main": ".eleventy.js",
+  "engines": {
+    "node": ">=12 <15"
+  },
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
