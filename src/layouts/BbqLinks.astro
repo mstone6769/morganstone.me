@@ -1,0 +1,44 @@
+---
+import '../styles/bbq-links.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Morgan Stone - {title}</title>
+  <meta name="description" content={description}>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#89a846">
+  <meta property="og:title" content={`Morgan Stone - ${title}`}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content="https://morganstone.me/images/smokin-stone-profile.jpg">
+  <meta property="og:url" content={`https://morganstone.me${Astro.url.pathname}`}>
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+</head>
+<body>
+  <main>
+    <slot />
+    <footer>Copyright &copy; {year} <a href="/">Morgan Stone</a></footer>
+  </main>
+  <script is:inline>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-1337770-1','auto');
+    ga('set','transport','beacon');
+    ga('send','pageview');
+    var captureOutboundLink=function(url){ga('send','event','outbound','click',url,{'transport':'beacon','hitCallback':function(){document.location=url;}})};
+    var captureSocialOutboundLink=function(social,url){ga('send','event','social','click',social,{'transport':'beacon','hitCallback':function(){document.location=url;}})};
+    var captureMailTo=function(email){ga('send','event','mailto','click',email);return true};
+    var captureAffiliateLink=function(url){ga('send','event','affiliate','click',url,{'transport':'beacon','hitCallback':function(){document.location=url;}})};
+  </script>
+  <script is:inline src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>

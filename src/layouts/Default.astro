@@ -1,0 +1,57 @@
+---
+import '../styles/main.css';
+
+const personSchema = {
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Morgan Stone",
+  "url": "https://morganstone.me",
+  "sameAs": [
+    "https://www.linkedin.com/in/morganstone",
+    "https://github.com/mstone6769",
+    "https://codepen.io/mstone6769/",
+    "https://twitter.com/morganstone",
+    "https://www.instagram.com/smokin.stone/",
+    "https://www.behance.net/mstone",
+    "https://www.flickr.com/people/morganstone/",
+    "https://dribbble.com/mstone",
+    "https://www.facebook.com/mstone"
+  ]
+};
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Morgan Stone</title>
+  <meta name="description" content="Personal website of Birmingham, Alabama native, Morgan Stone">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#89a846">
+  <meta property="og:title" content="Morgan Stone">
+  <meta property="og:description" content="Personal website of Birmingham, Alabama native, Morgan Stone">
+  <meta property="og:image" content="https://morganstone.me/images/morgan-stone.jpg">
+  <meta property="og:url" content={`https://morganstone.me${Astro.url.pathname}`}>
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+</head>
+<body>
+  <main>
+    <h1 class="container p1 condensed">Morgan Stone</h1>
+    <div class="container p1">
+      <slot />
+    </div>
+  </main>
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  <script is:inline>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-1337770-1','auto');
+    ga('set','transport','beacon');
+    ga('send','pageview');
+    var captureOutboundLink=function(url){ga('send','event','outbound','click',url,{'transport':'beacon','hitCallback':function(){document.location=url;}})};
+    var captureSocialOutboundLink=function(social,url){ga('send','event','social','click',social,{'transport':'beacon','hitCallback':function(){document.location=url;}})};
+    var captureMailTo=function(email){ga('send','event','mailto','click',email);return true};
+    var captureAffiliateLink=function(url){ga('send','event','affiliate','click',url,{'transport':'beacon','hitCallback':function(){document.location=url;}})};
+  </script>
+  <script is:inline src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>
