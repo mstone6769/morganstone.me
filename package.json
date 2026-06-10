@@ -7,7 +7,6 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-
   "author": "Morgan Stone <mstone@designbymorgan.com> (https://morganstone.me/)",
   "engines": {
     "node": ">=18"

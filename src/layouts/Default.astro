@@ -24,23 +24,20 @@ const personSchema = {
 <head>
   <meta charset="utf-8">
   <title>Morgan Stone</title>
-  <meta name="description" content="Personal website of Birmingham, Alabama native, Morgan Stone">
+  <meta name="description" content="Director of Software Engineering based in Birmingham, Alabama.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#89a846">
+  <meta name="theme-color" content="#1b1a18">
   <meta property="og:title" content="Morgan Stone">
-  <meta property="og:description" content="Personal website of Birmingham, Alabama native, Morgan Stone">
+  <meta property="og:description" content="Director of Software Engineering based in Birmingham, Alabama.">
   <meta property="og:image" content="https://morganstone.me/images/morgan-stone.jpg">
   <meta property="og:url" content={`https://morganstone.me${Astro.url.pathname}`}>
-  <link rel="preload" href="/fonts/fraunces-v3-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/fraunces-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://www.google-analytics.com">
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
 </head>
 <body>
   <main>
-    <h1 class="container p1 condensed">Morgan Stone</h1>
-    <div class="container p1">
-      <slot />
-    </div>
+    <slot />
   </main>
   <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
   <script is:inline>

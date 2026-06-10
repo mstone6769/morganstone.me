@@ -1,30 +1,98 @@
 ---
+import { Image } from 'astro:assets';
 import Default from '../layouts/Default.astro';
+import headshot from '../assets/headshot_halftone_green.png';
 ---
 <Default>
-  <p class="lead">Howdy! My name is Morgan Stone and I'm a <a href="https://www.linkedin.com/in/morganstone/" onclick="captureOutboundLink('https://www.linkedin.com/in/morganstone/')">software engineering director</a> hailing from <a href="https://en.wikipedia.org/wiki/Birmingham,_Alabama" title="Birmingham, Alabama" onclick="captureOutboundLink('https://en.wikipedia.org/wiki/Birmingham,_Alabama')">The Magic City</a>. I work for <a href="https://www.linkedin.com/company/rvohealth/" onclick="captureOutboundLink('https://www.linkedin.com/company/rvohealth/')">RVO Health</a> where I lead a team that <a href="https://www.healthgrades.com/about" onclick="captureOutboundLink('https://www.healthgrades.com/about')">helps people find their next doctor</a>. In my off time, you can find me at my <a href="https://www.kingwoodchurch.com" onclick="captureOutboundLink('https://www.kingwoodchurch.com')">local church</a> or <a href="/bbq-links">smoking a brisket</a>.</p>
-  <h2>Talks</h2>
-  <div class="small-container">
-    <h3><a href="https://docs.google.com/presentation/d/13jKRwX1Jmc-XAu4I_PUKMfct0YPDxY6iDixfSPteC00/edit?usp=sharing">React to Angular &amp; Back Again</a></h3>
-    <p>Birmingham Javascript Meetup, September 2021</p>
-    <h3><a href="https://github.com/mstone6769/lets-build-a-zoo">Rapid Prototyping with Angular CLI</a></h3>
-    <p>Women Who Code Birmingham, January 2018</p>
-    <h3><a href="https://www.slideshare.net/morganstone/optimizing-angular-performance-in-enterprise-single-page-apps">Optimizing Angular (Client Side Performance)</a></h3>
-    <p>Birmingham Javascript Meetup, June 2016</p>
-    <h3><a href="https://github.com/mstone6769/theRocksRecipes">Foundation for Apps</a></h3>
-    <p>Birmingham Javascript Meetup, April 2015</p>
-    <h3>Sass: Get Spunky Writing CSS</h3>
-    <p>AIGA Birmingham, March 2014</p>
-    <h3>An Introduction to Foundation: A Responsive Design Framework</h3>
-    <p>AIGA Birmingham, November 2013</p>
-  </div>
-  <h2>Interviews</h2>
-  <div class="small-container">
-    <h3>Collat Alumni Find Success in Digital Careers</h3>
-    <p>UAB Collat School of Business, March 2017</p>
-  </div>
-  <h2>Contact</h2>
-  <div class="small-container">
-    <p>We can connect via <a href="mailto:mstone@designbymorgan.com" onclick="captureMailTo('mstone@designbymorgan.com')">Email</a> or <a href="https://www.linkedin.com/in/morganstone">LinkedIn</a>.</p>
+  <div class="wrap">
+
+    <header class="profile-header">
+      <Image
+        src={headshot}
+        alt="Morgan Stone"
+        width={128}
+        height={128}
+        class="avatar"
+        loading="eager"
+        decoding="async"
+        format="avif"
+      />
+      <p class="eyebrow">Morgan Stone<br>Director of Software Engineering</p>
+    </header>
+
+    <h1 class="headline">
+      I translate business goals into <strong>high-velocity technical execution</strong> across a 32-person global org.
+    </h1>
+    <p class="subtitle">Architecture &times; P&amp;L. Came up through marketing and design, went deep on systems, scaled teams through three acquisitions.</p>
+
+    <hr class="rule" aria-hidden="true">
+
+    <p class="eyebrow" style="margin-bottom:18px">Selected impact</p>
+    <div class="stats">
+      <div>
+        <p class="stat-value">$14.5M</p>
+        <p class="stat-label">revenue protected<br>SOC 2 Type 1 &amp; 2</p>
+      </div>
+      <div>
+        <p class="stat-value">~44&times;</p>
+        <p class="stat-label">deploy frequency<br>bi-weekly &rarr; 22.4/wk</p>
+      </div>
+      <div>
+        <p class="stat-value">$309K</p>
+        <p class="stat-label">FinOps savings<br>in one year</p>
+      </div>
+    </div>
+
+    <p class="eyebrow" style="margin-bottom:12px">Where the $309K came from</p>
+    <svg
+      class="finops-bar"
+      viewBox="0 0 1000 30"
+      preserveAspectRatio="none"
+      role="img"
+      aria-label="FinOps savings: AWS cost 170K (55%), QA infrastructure 94K (30%), version control consolidation 45K (15%)"
+    >
+      <defs>
+        <clipPath id="bar-clip">
+          <rect width="1000" height="30" rx="5" ry="5" />
+        </clipPath>
+      </defs>
+      <g clip-path="url(#bar-clip)">
+        <rect x="0"   width="550" height="30" fill="#a1be63" />
+        <rect x="550" width="304" height="30" fill="#c2d790" />
+        <rect x="854" width="146" height="30" fill="#7f9a48" />
+      </g>
+    </svg>
+    <ul class="finops-legend">
+      <li><span class="legend-swatch" style="background:#a1be63" aria-hidden="true"></span>AWS cost &middot; $170K</li>
+      <li><span class="legend-swatch" style="background:#c2d790" aria-hidden="true"></span>QA infra &middot; $94K</li>
+      <li><span class="legend-swatch" style="background:#7f9a48" aria-hidden="true"></span>600+ repos &middot; $45K</li>
+    </ul>
+
+    <p class="eyebrow" style="margin-bottom:18px">A decade across three acquisitions</p>
+    <div class="timeline">
+      <div class="timeline-nodes">
+        <div class="timeline-node">
+          <div class="timeline-dot" style="background:#5f6f38" aria-hidden="true"></div>
+          <p class="timeline-label">Medseek<br>origin</p>
+        </div>
+        <div class="timeline-node">
+          <div class="timeline-dot" style="background:#7f9a48" aria-hidden="true"></div>
+          <p class="timeline-label">Influence Health<br>'14</p>
+        </div>
+        <div class="timeline-node">
+          <div class="timeline-dot" style="background:#a1be63" aria-hidden="true"></div>
+          <p class="timeline-label timeline-label--highlight">Healthgrades<br>'18</p>
+        </div>
+        <div class="timeline-node">
+          <div class="timeline-dot" style="background:#a1be63" aria-hidden="true"></div>
+          <p class="timeline-label">Red Ventures<br>'21</p>
+        </div>
+        <div class="timeline-node">
+          <div class="timeline-dot timeline-dot--active" style="background:#b4ce72" aria-hidden="true"></div>
+          <p class="timeline-label timeline-label--highlight">RVO Health<br>'23 &middot; now</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </Default>
