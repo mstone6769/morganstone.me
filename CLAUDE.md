@@ -28,3 +28,30 @@ Static site built with [Astro](https://astro.build). Source is in `src/`, output
 **GA tracking** is inlined via `<script is:inline>` in both layouts (not processed by Vite) so the `captureOutboundLink`, `captureSocialOutboundLink`, `captureMailTo`, and `captureAffiliateLink` globals are available in `onclick` attributes on the page.
 
 **Deployment**: Netlify. `netlify.toml` publishes `dist/` and runs `pnpm build`.
+
+## Homepage design direction
+
+See `morganstone_me_green_direction.html` for the visual reference. Headshot assets are already in `public/images/` (`headshot_halftone_green.png`, `headshot_duotone_green.png`); serve as optimized AVIF/WebP. The halftone green treatment is the intended image.
+
+## Stack rules
+
+- Astro, static output. Zero client-side JS unless explicitly justified.
+- Self-host fonts: Fraunces (variable) for display/serif, IBM Plex Mono for labels and data. Subset to used glyphs. `font-display: swap`. Preload the LCP font.
+- Charts: hand-rolled inline SVG only. No chart libraries - they kill LCP and add CLS. Static markup, no layout shift.
+
+## Design tokens
+
+| Token | Value |
+|---|---|
+| Canvas | `#1b1a18` |
+| Text | `#ece8e1` |
+| Muted | `#938d84` |
+| Accent | `#a1be63` (one accent, used sparingly) |
+
+Typography: big Fraunces serif for stats and headlines, IBM Plex Mono for eyebrows and labels. Editorial left-aligned. Generous whitespace.
+
+## Hard rules
+
+- Copy uses NO em dashes. Use " - ", commas, or two sentences instead.
+- Accessible: keyboard nav, semantic markup, sufficient contrast, `prefers-reduced-motion`.
+- Perf budget: LCP < 1s, CLS ~0. Flag any change that risks either before implementing.
