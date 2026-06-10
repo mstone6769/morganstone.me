@@ -2,23 +2,15 @@
   "name": "morganstone",
   "version": "1.0.0",
   "description": "morganstone.me",
-  "main": ".eleventy.js",
-  "engines": {
-    "node": ">=12 <15"
-  },
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
+
   "author": "Morgan Stone <mstone@designbymorgan.com> (https://morganstone.me/)",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "@11ty/eleventy-img": "^2.0.1",
-    "clean-css": "^5.1.4",
-    "html-minifier": "^4.0.0",
-    "terser": "^5.7.1"
+    "astro": "^5.0.0"
   }
 }

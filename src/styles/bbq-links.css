@@ -96,7 +96,7 @@ main {
   margin-right: auto;
 }
 
-.profile-image > * {
+.profile-image {
   border-radius: 999px;
   width: 96px;
   height: 96px;
