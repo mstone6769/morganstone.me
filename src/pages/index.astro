@@ -6,12 +6,13 @@ import headshot from '../assets/headshot_halftone_green.png';
 <Default>
   <div class="wrap">
 
+    <!-- Hero -->
     <header class="profile-header">
       <Image
         src={headshot}
         alt="Morgan Stone"
-        width={128}
-        height={128}
+        width={144}
+        height={144}
         class="avatar"
         loading="eager"
         decoding="async"
@@ -23,75 +24,251 @@ import headshot from '../assets/headshot_halftone_green.png';
     <h1 class="headline">
       I translate business goals into <strong>high-velocity technical execution</strong> across a 32-person global org.
     </h1>
-    <p class="subtitle">Architecture &times; P&amp;L. Came up through marketing and design, went deep on systems, scaled teams through three acquisitions.</p>
+    <p class="subtitle">
+      Architecture &times; P&amp;L. Came up through marketing and design, went deep on full-stack and systems engineering - which means I frame architecture decisions in business terms rather than purely technical ones. Ten years scaling teams and platforms through three acquisitions.
+    </p>
+
+    <div class="cta-group">
+      <a href="https://www.linkedin.com/in/morganstone/" class="cta-btn cta-btn--primary" onclick="captureOutboundLink('https://www.linkedin.com/in/morganstone/')">
+        LinkedIn
+      </a>
+      <a href="https://github.com/mstone6769" class="cta-btn cta-btn--ghost" onclick="captureOutboundLink('https://github.com/mstone6769')">
+        GitHub
+      </a>
+      <a href="/bbq-links" class="cta-btn cta-btn--ghost">
+        BBQ Links
+      </a>
+    </div>
 
     <hr class="rule" aria-hidden="true">
 
-    <p class="eyebrow" style="margin-bottom:18px">Selected impact</p>
+    <!-- Impact stats -->
+    <p class="eyebrow" style="margin-bottom:28px">Selected impact</p>
     <div class="stats">
       <div>
         <p class="stat-value">$14.5M</p>
         <p class="stat-label">revenue protected<br>SOC 2 Type 1 &amp; 2</p>
       </div>
       <div>
-        <p class="stat-value">~44&times;</p>
-        <p class="stat-label">deploy frequency<br>bi-weekly &rarr; 22.4/wk</p>
+        <p class="stat-value">22.4<span style="font-size:0.55em;letter-spacing:0">/wk</span></p>
+        <p class="stat-label">releases at elite DORA<br>26.4-hr median lead time</p>
       </div>
       <div>
-        <p class="stat-value">$309K</p>
-        <p class="stat-label">FinOps savings<br>in one year</p>
+        <p class="stat-value">$300K<span style="font-size:0.55em">+</span></p>
+        <p class="stat-label">FinOps savings<br>AWS, tooling, version control</p>
+      </div>
+      <div>
+        <p class="stat-value">$1M</p>
+        <p class="stat-label">TSA eliminated<br>5-person op &rarr; 1 strategic hire</p>
       </div>
     </div>
 
-    <p class="eyebrow" style="margin-bottom:12px">Where the $309K came from</p>
-    <svg
-      class="finops-bar"
-      viewBox="0 0 1000 30"
-      preserveAspectRatio="none"
-      role="img"
-      aria-label="FinOps savings: AWS cost 170K (55%), QA infrastructure 94K (30%), version control consolidation 45K (15%)"
-    >
-      <defs>
-        <clipPath id="bar-clip">
-          <rect width="1000" height="30" rx="5" ry="5" />
-        </clipPath>
-      </defs>
-      <g clip-path="url(#bar-clip)">
-        <rect x="0"   width="550" height="30" fill="#a1be63" />
-        <rect x="550" width="304" height="30" fill="#c2d790" />
-        <rect x="854" width="146" height="30" fill="#7f9a48" />
-      </g>
-    </svg>
-    <ul class="finops-legend">
-      <li><span class="legend-swatch" style="background:#a1be63" aria-hidden="true"></span>AWS cost &middot; $170K</li>
-      <li><span class="legend-swatch" style="background:#c2d790" aria-hidden="true"></span>QA infra &middot; $94K</li>
-      <li><span class="legend-swatch" style="background:#7f9a48" aria-hidden="true"></span>600+ repos &middot; $45K</li>
-    </ul>
+    <hr class="rule" aria-hidden="true">
 
-    <p class="eyebrow" style="margin-bottom:18px">A decade across three acquisitions</p>
-    <div class="timeline">
-      <div class="timeline-nodes">
-        <div class="timeline-node">
-          <div class="timeline-dot" style="background:#5f6f38" aria-hidden="true"></div>
-          <p class="timeline-label">Medseek<br>origin</p>
-        </div>
-        <div class="timeline-node">
-          <div class="timeline-dot" style="background:#7f9a48" aria-hidden="true"></div>
-          <p class="timeline-label">Influence Health<br>'14</p>
-        </div>
-        <div class="timeline-node">
-          <div class="timeline-dot" style="background:#a1be63" aria-hidden="true"></div>
-          <p class="timeline-label timeline-label--highlight">Healthgrades<br>'18</p>
-        </div>
-        <div class="timeline-node">
-          <div class="timeline-dot" style="background:#a1be63" aria-hidden="true"></div>
-          <p class="timeline-label">Red Ventures<br>'21</p>
-        </div>
-        <div class="timeline-node">
-          <div class="timeline-dot timeline-dot--active" style="background:#b4ce72" aria-hidden="true"></div>
-          <p class="timeline-label timeline-label--highlight">RVO Health<br>'23 &middot; now</p>
+    <!-- Selected wins -->
+    <p class="eyebrow" style="margin-bottom:28px">Selected wins</p>
+    <div class="wins">
+
+      <article class="win-card">
+        <p class="win-eyebrow">Compliance</p>
+        <p class="win-metric">$14.5M</p>
+        <h2 class="win-title">Protected a health-system revenue stream through SOC 2</h2>
+        <p class="win-body">
+          Directed the SOC 2 Type 1 and Type 2 effort, then maintained that posture across annual audit cycles. Ran compliance and delivery in parallel - core-site accessibility held at 97% throughout.
+        </p>
+      </article>
+
+      <article class="win-card">
+        <p class="win-eyebrow">Partnership</p>
+        <p class="win-metric">164 days</p>
+        <h2 class="win-title">Zocdoc scheduling integration, 107K+ providers</h2>
+        <p class="win-body">
+          Delivered a complex scheduling partnership end-to-end in under six months, expanding provider search to 107,000+ doctors. The integration was covered in Newsweek.
+        </p>
+      </article>
+
+      <article class="win-card">
+        <p class="win-eyebrow">Delivery</p>
+        <p class="win-metric">~44&times;</p>
+        <h2 class="win-title">Elite DORA from a coupled .NET monolith</h2>
+        <p class="win-body">
+          Deprecated a bi-weekly release train by migrating the highest-traffic pages to Kubernetes-orchestrated Node.js and GraphQL. Took deployment frequency from 0.5 to 22.4 releases/week. DevEx score of 70.
+        </p>
+      </article>
+
+      <article class="win-card win-card--wide">
+        <p class="win-eyebrow">FinOps</p>
+        <p class="win-metric">$300K<span style="font-size:0.6em">+</span></p>
+        <h2 class="win-title">Three levers of infrastructure savings</h2>
+        <p class="win-body">AWS cost optimization, a technology vendor consolidation, and folding 600+ repos onto a single version-control platform - each attack surface identified and closed across separate initiative cycles.</p>
+        <svg
+          class="finops-bar"
+          viewBox="0 0 1000 24"
+          preserveAspectRatio="none"
+          role="img"
+          aria-label="FinOps savings breakdown: AWS cost 170K (55%), QA infrastructure 94K (30%), version control consolidation 45K (15%)"
+        >
+          <defs>
+            <clipPath id="bar-clip">
+              <rect width="1000" height="24" rx="4" ry="4" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#bar-clip)">
+            <rect x="0"   width="550" height="24" fill="#a1be63" />
+            <rect x="550" width="304" height="24" fill="#c2d790" />
+            <rect x="854" width="146" height="24" fill="#7f9a48" />
+          </g>
+        </svg>
+        <ul class="finops-legend">
+          <li><span class="legend-swatch" style="background:#a1be63" aria-hidden="true"></span>AWS cost &middot; $170K</li>
+          <li><span class="legend-swatch" style="background:#c2d790" aria-hidden="true"></span>QA infra &middot; $94K</li>
+          <li><span class="legend-swatch" style="background:#7f9a48" aria-hidden="true"></span>600+ repos &middot; $45K</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <hr class="rule" aria-hidden="true">
+
+    <!-- Technical range -->
+    <p class="eyebrow" style="margin-bottom:28px">Technical range</p>
+    <div class="tech-range">
+      <div>
+        <p class="tech-group-label">Languages</p>
+        <div class="tech-tags">
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Node.js</span>
         </div>
       </div>
+      <div>
+        <p class="tech-group-label">Frontend / API</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Angular</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">GraphQL</span>
+          <span class="tech-tag">REST</span>
+        </div>
+      </div>
+      <div>
+        <p class="tech-group-label">Data</p>
+        <div class="tech-tags">
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Elasticsearch</span>
+          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">Snowflake</span>
+        </div>
+      </div>
+      <div>
+        <p class="tech-group-label">Platform</p>
+        <div class="tech-tags">
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">Kubernetes</span>
+          <span class="tech-tag">CI/CD</span>
+          <span class="tech-tag">Feature Flags</span>
+        </div>
+      </div>
+      <div>
+        <p class="tech-group-label">Practices</p>
+        <div class="tech-tags">
+          <span class="tech-tag">DORA</span>
+          <span class="tech-tag">TDD</span>
+          <span class="tech-tag">SOC 2 / HITRUST</span>
+          <span class="tech-tag">WCAG</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule" aria-hidden="true">
+
+    <!-- Career -->
+    <p class="eyebrow" style="margin-bottom:28px">Career</p>
+    <ol class="career-list" reversed>
+
+      <li class="career-item">
+        <div class="career-dates">Jul 2023 &ndash; Present</div>
+        <div>
+          <p class="career-role">Director of Software Engineering</p>
+          <p class="career-company">RVO Health</p>
+          <p class="career-body">Lead a 32-person global org across 6 core teams and 3 engineering managers. Scope covers platform architecture, compliance, strategic partnerships, and FinOps. Held delivery cadence and organizational trust through two major restructuring cycles.</p>
+        </div>
+      </li>
+
+      <li class="career-item">
+        <div class="career-dates">Jun 2022 &ndash; Jul 2023</div>
+        <div>
+          <p class="career-role">Software Engineering Manager</p>
+          <p class="career-company">RVO Health</p>
+          <p class="career-body">Strategic insourcing, TSA elimination, and succession planning ahead of a Director promotion. Mentored a senior engineer into an engineering manager role.</p>
+        </div>
+      </li>
+
+      <li class="career-item">
+        <div class="career-dates">Aug 2021 &ndash; Jun 2022</div>
+        <div>
+          <p class="career-role">Software Engineering Manager</p>
+          <p class="career-company">Red Ventures</p>
+          <p class="career-body">Led the first phase of platform modernization - migrating Healthgrades' highest-traffic pages off legacy .NET to Kubernetes-orchestrated Node.js and GraphQL, serving 60% of site traffic and 420K+ daily users.</p>
+        </div>
+      </li>
+
+      <li class="career-item">
+        <div class="career-dates">Aug 2018 &ndash; Aug 2021</div>
+        <div>
+          <p class="career-role">Software Engineering Manager</p>
+          <p class="career-company">Influence Health / Healthgrades</p>
+          <p class="career-body">Prototyped a greenfield CDP in five days to secure executive approval post-acquisition, then built it out on Elasticsearch under HITRUST. Merged disparate engineering teams and moved them from high-risk quarterly deployments to reliable sprint-based releases.</p>
+        </div>
+      </li>
+
+      <li class="career-item">
+        <div class="career-dates">May 2014 &ndash; Aug 2018</div>
+        <div>
+          <p class="career-role">UI/UX Architect</p>
+          <p class="career-company">Influence Health / Medseek</p>
+          <p class="career-body">Architected platform-wide design systems across enterprise healthcare SaaS, drove the flagship patient portal to WCAG Level A, and established the foundational CI/CD pipelines for front-end delivery.</p>
+        </div>
+      </li>
+
+      <li class="career-item">
+        <div class="career-dates">2006 &ndash; 2014</div>
+        <div>
+          <p class="career-role">Director of Design &amp; Art Director</p>
+          <p class="career-company">Zeekee Interactive</p>
+          <p class="career-body">Started part-time through college, went full-time in 2010. Wore multiple hats across design, front-end development, and client strategy - including building an internal app for design approvals. The marketing-and-design foundation that informs how I frame engineering decisions today.</p>
+        </div>
+      </li>
+
+    </ol>
+
+    <hr class="rule" aria-hidden="true">
+
+    <!-- Speaking & teaching -->
+    <p class="eyebrow" style="margin-bottom:28px">Speaking &amp; teaching</p>
+    <ul class="speaking-list">
+      <li>Credentialed instructor, Interactive Design - UAB (2014 &ndash; 2018)</li>
+      <li>React to Angular and Back Again - Birmingham JS Meetup, 2021</li>
+      <li>Rapid Prototyping with Angular CLI - Women Who Code Birmingham, 2018</li>
+      <li>Optimizing Angular Performance - Birmingham JS Meetup, 2016</li>
+      <li>Foundation for Apps - Birmingham JS Meetup, 2015</li>
+      <li>Sass: Get Spunky Writing CSS - AIGA Birmingham, 2014</li>
+    </ul>
+
+    <hr class="rule" aria-hidden="true">
+
+    <!-- Connect -->
+    <p class="eyebrow" style="margin-bottom:20px">Connect</p>
+    <p class="connect-body">Open to conversations about engineering leadership, platform strategy, and the occasional brisket. LinkedIn is the best way in.</p>
+    <div class="cta-group">
+      <a href="https://www.linkedin.com/in/morganstone/" class="cta-btn cta-btn--primary" onclick="captureOutboundLink('https://www.linkedin.com/in/morganstone/')">
+        LinkedIn
+      </a>
+      <a href="https://github.com/mstone6769" class="cta-btn cta-btn--ghost" onclick="captureOutboundLink('https://github.com/mstone6769')">
+        GitHub
+      </a>
+      <a href="/bbq-links" class="cta-btn cta-btn--ghost">
+        BBQ Links
+      </a>
     </div>
 
   </div>
