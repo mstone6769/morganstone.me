@@ -1,10 +1,13 @@
 :root {
-  --canvas:   #1b1a18;
-  --text:     #ece8e1;
-  --muted:    #938d84;
-  --accent:   #a1be63;
-  --border:   rgba(255, 255, 255, 0.1);
-  --card-bg:  rgba(255, 255, 255, 0.04);
+  --canvas:        #1b1a18;
+  --text:          #ece8e1;
+  --text2:         #cfccc4;
+  --muted:         #938d84;
+  --muted2:        #8f8a82;
+  --accent:        #a1be63;
+  --accent-bright: #b4ce72;
+  --border:        rgba(255, 255, 255, 0.1);
+  --card-bg:       rgba(255, 255, 255, 0.04);
 }
 
 @font-face {
@@ -46,6 +49,20 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent-bright);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 ::selection { background: var(--accent); color: var(--canvas); }
@@ -336,6 +353,24 @@ body {
 }
 
 /* ── Career ──────────────────────────────── */
+
+.career-anchor {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 16px;
+  color: var(--text2);
+  line-height: 1.5;
+  max-width: 60ch;
+  margin: 0 0 14px;
+}
+
+.career-continuity {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: #a8a39a;
+  max-width: 62ch;
+  margin: 0 0 28px;
+}
 
 .career-list {
   list-style: none;
