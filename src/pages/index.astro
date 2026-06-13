@@ -25,7 +25,7 @@ import headshot from '../assets/headshot_halftone_green.png';
       I translate business goals into <strong>high-velocity technical execution</strong> across a 32-person global org.
     </h1>
     <p class="subtitle">
-      Architecture &times; P&amp;L. Came up through marketing and design, went deep on full-stack and systems engineering - which means I frame architecture decisions in business terms rather than purely technical ones. <span style="color:#b6c98c">Fifteen-plus years building and leading in web and product, the last decade scaling teams through three acquisitions.</span>
+      Architecture &times; P&amp;L. I came up through marketing and design, then went deep on full-stack and systems engineering, so I frame architecture decisions in business terms rather than purely technical ones. I work at the boundary between engineering and the business. This year that meant working alongside legal on the SLA language behind a health-system partnership worth ~$7M in annual revenue to RVO. Most of the past decade has been in regulated healthcare data, where compliance is the precondition for revenue, not a tax on it.
     </p>
 
     <div class="cta-group">
@@ -44,20 +44,29 @@ import headshot from '../assets/headshot_halftone_green.png';
     <div class="wins">
 
       <article class="win-card">
-        <p class="win-eyebrow">Compliance</p>
+        <p class="win-eyebrow">Regulated data</p>
         <p class="win-metric">$14.5M</p>
-        <h2 class="win-title">Protected a health-system revenue stream through SOC 2</h2>
+        <h2 class="win-title">Built and held the trust posture that regulated revenue depends on</h2>
         <p class="win-body">
-          Directed the SOC 2 Type 1 and Type 2 effort, then maintained that posture across annual audit cycles.
+          Directed the SOC 2 Type 1 and Type 2 effort and have maintained that posture across annual audit cycles. I work fluently with state health-privacy law (MHMD) and the security reviews enterprise health customers run before they sign, in environments that also operate under HITRUST. The compliance environment is native to how I build, not a layer added at the end.
         </p>
       </article>
 
       <article class="win-card">
         <p class="win-eyebrow">AI enablement</p>
-        <p class="win-metric">$650K</p>
-        <h2 class="win-title">Org-wide AI adoption, savings recycled into tooling</h2>
+        <p class="win-metric">100%</p>
+        <h2 class="win-title">Zero to 100% weekly-active AI adoption in twelve months</h2>
         <p class="win-body">
-          Drove weekly-active AI tooling adoption (Claude and Cursor) to 90-100% of the org. Engineers report ~$650K in annual time savings this year, reinvested into better tooling - tracked against the guardrails: faster without breaking things or burning people out.
+          Took weekly-active AI coding adoption across my org from near-zero to 100% in a year (reported at our monthly operational-excellence review), with the habits that made it stick: AI show-and-tells in sprint reviews and shared repos of reusable AI skills. Tracked against explicit guardrails: faster without breaking things or burning people out.
+        </p>
+      </article>
+
+      <article class="win-card">
+        <p class="win-eyebrow">AI in product</p>
+        <p class="win-metric">+25%</p>
+        <h2 class="win-title">AI shipped into the product, not just the dev loop</h2>
+        <p class="win-body">
+          My teams shipped AI-generated review summaries on Healthgrades, built end-to-end in two months. They added AI sentiment analysis to the content-review approval flow, cutting the noise auditors wade through so 25% more submitted reviews cleared manual review. And they used AI to surface Solr optimizations that lifted search throughput from 4.5k to 5.4k docs/sec.
         </p>
       </article>
 
@@ -72,10 +81,10 @@ import headshot from '../assets/headshot_halftone_green.png';
 
       <article class="win-card">
         <p class="win-eyebrow">Delivery</p>
-        <p class="win-metric">~44&times;</p>
-        <h2 class="win-title">Elite DORA from a coupled .NET monolith</h2>
+        <p class="win-metric">5 teams decoupled</p>
+        <h2 class="win-title">Re-platformed off a .NET monolith, decoupled the release train</h2>
         <p class="win-body">
-          Deprecated a coupled .NET monolith and its bi-weekly release train, moving the highest-traffic pages onto a modern containerized stack. Deployment frequency from 0.5 to 22.4 releases/week, DevEx score of 70.
+          Led the migration of Healthgrades' highest-traffic pages (60% of site traffic at the start of the migration, ~80% at peak) off a tightly coupled .NET monolith onto independently releasable Node apps in Kubernetes, archiving 79K lines of code. Five teams that shared one release process can now ship without fear of regressing each other, which retired the weekly release meeting and twice-weekly coordination overhead. Deployment frequency rose to 22.4 releases/week at a 26.4-hour median lead time, with a DevEx score of 70. I hold the org to DORA metrics because they keep speed and quality balanced rather than trading one for the other.
         </p>
       </article>
 
@@ -107,15 +116,6 @@ import headshot from '../assets/headshot_halftone_green.png';
           <li><span class="legend-swatch" style="background:#c2d790" aria-hidden="true"></span>QA infra &middot; $94K</li>
           <li><span class="legend-swatch" style="background:#7f9a48" aria-hidden="true"></span>600+ repos &middot; $45K</li>
         </ul>
-      </article>
-
-      <article class="win-card">
-        <p class="win-eyebrow">Insourcing</p>
-        <p class="win-metric">$1M</p>
-        <h2 class="win-title">Eliminated a Transition Services Agreement on schedule</h2>
-        <p class="win-body">
-          Rebuilt a critical ROI analytics program, replacing a 5-person legacy operation with a single strategic hire, and retired a $1M TSA on the contractual deadline.
-        </p>
       </article>
 
     </div>
@@ -164,7 +164,8 @@ import headshot from '../assets/headshot_halftone_green.png';
         <div class="tech-tags">
           <span class="tech-tag">DORA</span>
           <span class="tech-tag">TDD</span>
-          <span class="tech-tag">SOC 2 / HITRUST</span>
+          <span class="tech-tag">SOC 2</span>
+          <span class="tech-tag">HITRUST-aware</span>
           <span class="tech-tag">WCAG</span>
         </div>
       </div>
@@ -183,7 +184,7 @@ import headshot from '../assets/headshot_halftone_green.png';
         <div>
           <p class="career-role">Director of Software Engineering</p>
           <p class="career-company">RVO Health</p>
-          <p class="career-body">Lead a 32-person global org across 6 core teams and 3 engineering managers. Own the engineering P&amp;L levers - cloud and vendor cost, procurement and contract decisions, CapEx planning, security posture (Wiz), compliance, and pre-sales customer security assessments - while balancing delivery speed against stability and team sustainability.</p>
+          <p class="career-body">Lead a 32-person global org across 6 core teams and 3 engineering managers. I operate across the engineering-business boundary: managing cloud and vendor cost, partnering with procurement on renewals and with legal on contract and SLA terms, governing the CapEx process with finance and product, keeping my teams accountable to our security org's SLAs, owning compliance, and running pre-sales customer security assessments, all while balancing delivery speed against stability and team sustainability.</p>
         </div>
       </li>
 
@@ -192,7 +193,7 @@ import headshot from '../assets/headshot_halftone_green.png';
         <div>
           <p class="career-role">Software Engineering Manager</p>
           <p class="career-company">RVO Health</p>
-          <p class="career-body">Strategic insourcing, TSA elimination, and succession planning ahead of a Director promotion. Mentored a senior engineer into an engineering manager role.</p>
+          <p class="career-body">Eliminated a $1M Transition Services Agreement on schedule by rebuilding a critical ROI analytics program, replacing a 5-person legacy operation with a single strategic hire. Mentored a senior engineer into an engineering manager role ahead of my Director promotion.</p>
         </div>
       </li>
 
@@ -244,7 +245,8 @@ import headshot from '../assets/headshot_halftone_green.png';
 
     <!-- Connect -->
     <p class="eyebrow" style="margin-bottom:20px">Connect</p>
-    <p class="connect-body">Open to conversations about engineering leadership, platform strategy, and the occasional brisket. LinkedIn is the best way in. Outside of work I collect watches, own an Eames Lounge Chair, and spend weekends at the smoker.</p>
+    <p class="connect-body">I do my best work where engineering sits close to the product and the P&amp;L, in regulated or data-rich domains where compliance is a competitive asset rather than a drag. If that's the kind of org you're building, LinkedIn is the best way in.</p>
+    <p class="connect-body">Outside of work I collect watches, own an Eames Lounge Chair, and spend weekends at the smoker.</p>
     <div class="cta-group">
       <a href="https://www.linkedin.com/in/morganstone/" class="cta-btn cta-btn--primary" onclick="captureOutboundLink('https://www.linkedin.com/in/morganstone/')">
         LinkedIn
