@@ -5,3 +5,10 @@ allowBuilds:
 overrides:
   sharp: ^0.35.5
   svgo: ^4.0.2
+
+auditConfig:
+  ignoreGhsas:
+    # http-cache-semantics <=4.2.0, pulled in by astro. Only used to cache
+    # remote images at build time, which this static site doesn't do.
+    # No patched release on npm as of 2026-10-03; remove once 4.2.1 ships.
+    - GHSA-ch52-4w7c-c8xp
